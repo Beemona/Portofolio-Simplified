@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="content.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  
+  
+  <title>Beemona</title>
+</head>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-mainbg">
+    <a class="navbar-brand navbar-logo" href="index.html">Beemona</a>
+
+  
+    <button onclick="myFunction()" class="navbar-toggler">
+     <i class="fas fa-bars text-white"></i>
+    
+
+    <li class="nav-dropdown">
+      <a class="nav-link "href="services.html">Services</a> 
+    </li>
+    <li class="nav-dropdown">
+      <a class="nav-link" href="about.html">About</a>
+    </li>
+    <li class="nav-dropdown">
+      <a class="nav-link" href="contact.html">Contact</a>
+    </li>
+</button>
+
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <div class="hori-selector">
+          <div class="left">
+
+          </div>
+        </div>
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"></i>Home</a>
+        </li>
+
+        <li>
+          <a class="nav-link "href="services.html"><i class="far fa-copy"></i>Services</a> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="far fa-clone"></i>About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html"><i class="far fa-calendar-alt"></i>Contact</a>
+        </li>
+       
+          
+      </ul>
+    </div>
+  </nav>
+</header>
+<main class="container">
+
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+} 
+</script>
+
+<h1 id="title-about">Simona Calota</h1>
+<img class="profile" src="profile.jpeg" alt="Picture Profile">
+
+
+ <h3> Started as an Artist, ended up with a passion for <b>Web Development</b> </h3> <br> <br>
+
+ <p class="about-profile">
+  Digital Art was the first step I took towards my passion. Since I was little, I loved drawing and painting. When I grew up, I started saving up for a drawing tablet because I found it fascinating to convert my traditional paintings into digital art.
+  Firstly, I started with <b> Krita and CorelDraw</b>. Then I found out about vector graphics, and so I started learning <b> Illustrator</b>. I already knew how <b> Photoshop</b> works, so that helped me in my journey.  <br>
+  <br> Web Design was next. I liked creating vector graphics, but I wanted to do something on a bigger scale. So I tried <b> Figma </b> and I loved it. 
+  But why should I stop here? Why shouldn't I implement what I learned into a real product? So, I learned <b>Front End Development</b>. Followed by <b> Back-end Development</b>, I realized this is the path I want to take career-wise. <br>
+  <br> Artificial Intelligence became really popular, so I wanted to give it a go. Of course, because I was passionate about art, I wanted to see how AI creates artistic images. I started with <b>MidJourney</b> which generates beautiful images, but I wanted something more personalized. <b>Stable Diffusion</b> came into the picture. <br>
+ </p>
+
+ <h3> Why are so many skills listed here? </h3> <br> 
+ 
+ <p class="about-profile"> Well, the world is ever-changing and you have to improve your skills set to be good at what you do. I'm looking for a career in Web Development, but because of my knowledge of how these other tools work, I better understand how all the puzzle pieces fit together.
+  A web developer works alongside Graphic, Web and Digital Designers to create beautiful websites. If I know, for example, what goes in creating a logo, designing a landing page or how functionality impacts the user experience, I'm improving my knowledge on the necessary steps I have to take to make the best product possible.
+</p>
+
+</main>
+<footer>
+  <div class="waves">
+    <div class="wave" id="wave1"></div>
+    <div class="wave" id="wave2"></div>
+    <div class="wave" id="wave3"></div>
+    <div class="wave" id="wave4"></div>
+  </div>
+  <ul class="social_icon">
+    <li><a href=" https://wa.me/40752105210"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+    <li><a href="https://github.com/Beemona"><ion-icon name="logo-github"></ion-icon></a></li>
+    <li><a href="https://www.linkedin.com/in/simona-calota/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+  </ul>
+
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <p class="copyright"> Beemona </p>
+</footer>
+
+
+
+</body>
+
+</html>
+

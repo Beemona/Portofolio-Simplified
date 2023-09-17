@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="content.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  
+  
+  <title>Beemona</title>
+</head>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-mainbg">
+    <a class="navbar-brand navbar-logo" href="index.html">Beemona</a>
+
+  
+    <button onclick="myFunction()" class="navbar-toggler">
+     <i class="fas fa-bars text-white"></i>
+    
+
+    <li class="nav-dropdown">
+      <a class="nav-link "href="services.html">Services</a> 
+    </li>
+    <li class="nav-dropdown">
+      <a class="nav-link" href="about.html">About</a>
+    </li>
+    <li class="nav-dropdown">
+      <a class="nav-link" href="contact.html">Contact</a>
+    </li>
+</button>
+
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <div class="hori-selector">
+          <div class="left">
+
+          </div>
+        </div>
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"></i>Home</a>
+        </li>
+
+        <li>
+          <a class="nav-link "href="services.html"><i class="far fa-copy"></i>Services</a> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html"><i class="far fa-clone"></i>About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html"><i class="far fa-calendar-alt"></i>Contact</a>
+        </li>
+       
+          
+      </ul>
+    </div>
+  </nav>
+</header>
+<main class="container">
+
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+} 
+</script>
+
+
+<h1>Contact</h1>
+<p>
+  You can find me on <a href="https://github.com/Beemona">Github</a> and <a href="https://www.linkedin.com/in/simona-calota/">LinkedIn</a>. Also, you can message me directly through the following form:
+</p>
+<form class="form">
+  <input name="name" type="text" class="feedback-input" placeholder="Name" />
+  <input name="email" type="text" class="feedback-input" placeholder="Email" />
+  <textarea name="text" class="feedback-input" placeholder="Write your message here..."></textarea>
+  <input type="submit" value="SUBMIT" />
+</form>
+
+
+</main>
+<footer>
+  <div class="waves">
+    <div class="wave" id="wave1"></div>
+    <div class="wave" id="wave2"></div>
+    <div class="wave" id="wave3"></div>
+    <div class="wave" id="wave4"></div>
+  </div>
+  <ul class="social_icon">
+    <li><a href=" https://wa.me/40752105210"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+    <li><a href="https://github.com/Beemona"><ion-icon name="logo-github"></ion-icon></a></li>
+    <li><a href="https://www.linkedin.com/in/simona-calota/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+  </ul>
+
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <p class="copyright"> Beemona </p>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
